@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h1>About me??</h1>
+	<p>
+		I'm from {{ my_clg }}. Need I say more? 
+	</p>
+	<ul>
+		<li></li>
+		<li></li>
+<ul>
+{% for my-sub_item in my_degree %}
+	<li>{{ my_sub_item }} </li>	 
+{% endfor %}
+</ul>
+{% endblock %}
