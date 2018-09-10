@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    'pages',	
+    'pages',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
+
+#EMAIL_BACKEND = 'django_mailgun.MailgunBackend'
+#MAILGUN_ACCESS_KEY = 'ACCESS-KEY'
+#MAILGUN_SERVER_NAME = 'SERVER-NAME'
+
+
+#MANDRILL_API_KEY = "<your Mandrill key>"
+#EMAIL_BACKEND = "djrill.mail.backends.djrill.DjrillBackend"
+#DEFAULT_FROM_EMAIL = "you@example.com"

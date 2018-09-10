@@ -1,7 +1,20 @@
 <!doctype html>
 <html>
 <head><title>Email Service</title></head>
-<body>{% block content %}
+<body>
+  <nav>
+    <ul>
+      <li>
+        <form class="logout-link" action="{% url 'accounts:logout'%}" method="post">
+          {% csrf_token %}
+          <button type="submit">Logout</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+{% block content %}
 	replace me 
-{% endblock %}</body>
+{% endblock %}
+
+</body>
 </html>
